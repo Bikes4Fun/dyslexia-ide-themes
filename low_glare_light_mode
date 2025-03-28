@@ -1,0 +1,188 @@
+{
+    "editor.accessibilitySupport": "off",
+    "editor.minimap.enabled": false,
+    "editor.fontFamily": "'OpenDyslexicAlta-Bold', Consolas, 'Courier New', monospace",
+    "editor.lineHeight": 1.5,
+    "editor.fontWeight": "normal",
+    "editor.letterSpacing": 0.5,
+    "editor.wordWrap": "on",
+    
+    // Enable automatic theme switching based on system preferences
+    "window.autoDetectColorScheme": true,
+    "workbench.preferredLightColorTheme": "Solarized Light",
+    "workbench.preferredDarkColorTheme": "Tomorrow Night Blue",
+    
+    // Light mode customizations (baby blue tones)
+    "workbench.colorCustomizations": {
+        "[Solarized Light]": {
+            // Editor colors
+            "editor.background": "#e3ecf3",
+            "editorGutter.background": "#d9e8f5",
+            "editor.lineHighlightBackground": "#d9e8f5",
+            "editor.selectionBackground": "#b3d9ff",
+            
+            // Sidebar colors
+            "sideBar.background": "#CCE6FF",
+            "sideBar.foreground": "#000000",
+            "sideBar.border": "#B3D9FF",
+            "sideBarSectionHeader.background": "#B3D9FF",
+            "sideBarSectionHeader.foreground": "#000000",
+            "sideBarTitle.foreground": "#000000",
+            
+            // Sidebar item selection
+            "list.activeSelectionBackground": "#B3D9FF",
+            "list.activeSelectionForeground": "#000000",
+            "list.inactiveSelectionBackground": "#CCE6FF",
+            "list.inactiveSelectionForeground": "#000000",
+            "list.hoverBackground": "#B3D9FF",
+            "list.hoverForeground": "#000000",
+            
+            // Activity bar
+            "activityBar.background": "#B3D9FF",
+            "activityBar.foreground": "#000000",
+            "activityBar.border": "#B3D9FF",
+            
+            // Panel (terminal, output)
+            "panel.background": "#E6F3FF",
+            "panel.border": "#B3D9FF",
+            "panelTitle.activeBorder": "#B3D9FF",
+            "panelTitle.activeForeground": "#000000",
+            
+            // Status bar
+            "statusBar.background": "#B3D9FF",
+            "statusBar.foreground": "#000000",
+            "statusBar.border": "#B3D9FF",
+            
+            // Title bar
+            "titleBar.activeBackground": "#CCE6FF",
+            "titleBar.activeForeground": "#000000",
+            "titleBar.border": "#B3D9FF",
+            
+            // Tab bar
+            "tab.activeBackground": "#CCE6FF",
+            "tab.inactiveBackground": "#d9e8f5",
+            "tab.activeForeground": "#000000",
+            "tab.inactiveForeground": "#333333",
+            "editorGroupHeader.tabsBackground": "#e3ecf3",
+            "tab.border": "#B3D9FF",
+            
+            // Input controls
+            "input.background": "#E6F3FF",
+            "input.foreground": "#000000",
+            "input.border": "#B3D9FF",
+            
+            // Dropdown controls
+            "dropdown.background": "#E6F3FF",
+            "dropdown.foreground": "#000000",
+            "dropdown.border": "#B3D9FF",
+            
+            // Buttons
+            "button.background": "#B3D9FF",
+            "button.foreground": "#000000",
+            "button.hoverBackground": "#99CCFF",
+            
+            // UI notifications and focus borders
+            "focusBorder": "#B3D9FF",
+            "notificationCenter.border": "#B3D9FF",
+            "notificationCenterHeader.background": "#CCE6FF",
+            "notificationCenterHeader.foreground": "#000000",
+            "notificationToast.border": "#B3D9FF",
+            
+            // Quick picker (Command Palette)
+            "quickInput.background": "#E6F3FF",
+            "quickInput.foreground": "#000000",
+            "pickerGroup.border": "#B3D9FF",
+            "pickerGroup.foreground": "#000000",
+            
+            // Widget backgrounds (intellisense, etc)
+            "editorWidget.background": "#E6F3FF",
+            "editorWidget.border": "#B3D9FF",
+            "editorSuggestWidget.background": "#E6F3FF",
+            "editorSuggestWidget.border": "#B3D9FF",
+            "editorSuggestWidget.foreground": "#000000",
+            "editorSuggestWidget.highlightForeground": "#0000C0",
+            "editorSuggestWidget.selectedBackground": "#CCE6FF"
+        }
+    },
+    
+    // High-contrast token colors for light theme
+    "editor.tokenColorCustomizations": {
+        "[Solarized Light]": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "storage.type",
+                        "entity.name.type",
+                        "support.type"
+                    ],
+                    "settings": {
+                        "foreground": "#8f0075" // darker magenta for better contrast
+                    }
+                },
+                {
+                    "scope": [
+                        "keyword.operator",
+                        "punctuation.definition.generic"
+                    ],
+                    "settings": {
+                        "foreground": "#4b0082" // indigo for operators
+                    }
+                },
+                {
+                    "scope": [
+                        "variable.parameter"
+                    ],
+                    "settings": {
+                        "foreground": "#8f0075" // darker magenta for parameters
+                    }
+                }
+            ],
+            "comments": "#0F6E0F", // dark green for comments
+            "functions": "#0000C0", // dark blue for functions
+            "keywords": "#7D0000", // dark red for keywords
+            "numbers": "#9A4D00", // brown for numbers
+            "strings": "#006666", // dark teal for strings
+            "types": "#7D3C00", // dark orange for types
+            "variables": "#00008B" // dark blue for variables
+        }
+    },
+    
+    // Improve readability settings
+    "editor.renderWhitespace": "none",
+    "editor.autoClosingBrackets": "beforeWhitespace",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.location": "hidden",
+    
+    // Reduce visual noise
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.quickSuggestions": {
+        "other": false,
+        "comments": false,
+        "strings": false
+    },
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.snippetSuggestions": "none",
+    
+    // Files to exclude for less clutter
+    "files.exclude": {
+        ".**": true,
+        ".*/*": true,
+        ".gitignore": true,
+        "**/__**": true,
+        "**/__init__.py": true,
+        "**/*[vV][eE][nN][vV]*/**": true
+    },
+    
+    // Keep your other important settings
+    "security.workspace.trust.untrustedFiles": "open",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "C_Cpp.autocompleteAddParentheses": true,
+    "git.enableSmartCommit": true,
+    "explorer.confirmDragAndDrop": false,
+    "python.defaultInterpreterPath": "/Users/turtlesoup/.pyenv/versions/3.14-dev/bin/python",
+    "workbench.editor.enablePreview": false
+}
